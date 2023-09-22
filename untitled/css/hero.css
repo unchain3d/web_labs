@@ -1,0 +1,56 @@
+.container__hero {
+  display: flex;
+
+}
+.hero__inner {
+  display: flex;
+  width: 440px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 103px;
+
+}
+
+.hero__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.hero__paragraph {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Merriweather, sans-serif;
+  line-height: normal;
+}
+
+.hero__movie {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+  max-height: 32px;
+  padding-top: 183px;
+  padding-left: 115px;
+
+}
+
+.movie__title {
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.img__movie {
+  margin: 0;
+
+}
+
+.hero__img{
+  background: url(../img/backgroundo.svg)no-repeat center;
+  height: 554px;
+}
