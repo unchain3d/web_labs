@@ -1,0 +1,28 @@
+.info {
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+
+}
+
+.stuff {
+  display: flex;
+}
+
+
+.cookies {
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  padding-right: 30px;
+}
+
+.privacy {
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
