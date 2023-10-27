@@ -1,0 +1,5 @@
+[ {"type":"Bosch","power":15,"revolutions":10000,"id":1},
+  {"type":"Tefal","power":20,"revolutions":15000,"id":2},
+  {"type":"Philips","power":12,"revolutions":11000,"id":3},
+  {"type":"Benza","power":25,"revolutions":20000,"id":4},
+  {"type":"Bosch","power":15,"revolutions":10000,"id":10}]
