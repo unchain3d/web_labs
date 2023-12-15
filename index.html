@@ -1,0 +1,43 @@
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  <section class="chain">
+    <div class="main__container">
+      <h1>Chainsaws</h1>
+      <input type="text" id="model-type" placeholder="Model Type" />
+      <input type="number" id="chainsaw-power" placeholder="Power (in kWatts)" min="0"/>
+      <input type="number" id="revolutions" placeholder="Number of Revolutions" min="0"/>
+      <div class="buttons__container">
+        <button id="add-chainsaw">Add a Chainsaw</button>
+        <button id="sort">Sort by Power</button>
+        <button id="count-revolutions">Define RPM</button>
+      </div>
+      <input type="text" id="search" placeholder="Search by Model" />
+      <div id="main"></div>
+    </div>
+  </section>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script type="module" src="./js/index.js"></script>
+
+  </body>
+
+  </html>
