@@ -1,0 +1,35 @@
+.chainsaw-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  flex-wrap: wrap;
+
+}
+
+.chainsaw-section-column {
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.chainsaw-section-image {
+  margin-bottom: 20px;
+  object-fit: contain;
+
+}
+
+.chainsaw-section-text-title {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.chainsaw-section-text-paragraph {
+  color: #7A7A7A;
+  font-size: 18px;
+}
+
+.chainsaw-section-column:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
