@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Black.eot');
+    src: local('Merriweather Black'), local('Merriweather-Black'),
+        url('Merriweather-Black.eot?#iefix') format('embedded-opentype'),
+        url('Merriweather-Black.woff') format('woff'),
+        url('Merriweather-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

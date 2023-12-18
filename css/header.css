@@ -1,0 +1,307 @@
+/* HEADER */
+
+.header {
+    padding-top: 35px;
+    height: 34px;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.navigation-wrapper {
+    margin-bottom: 115px;
+}
+
+.logo {
+    display: flex;
+    width: 135px;
+    height: 26px;
+    padding: 0px 0.051px 0px 0.156px;
+    justify-content: center;
+    align-items: center;
+    gap: 6.066px;
+    flex-shrink: 0;
+}
+
+.navigation ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navigation li + li {
+    margin-left: 40px;
+}
+
+.navigation a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.contact-button {
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    background: white;
+    border-radius: 4px;
+    border: none;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #606B74;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 12px;
+}
+
+.contact-button a {
+    color: #606B74;
+    text-decoration: none
+}
+
+.contact-button:hover {
+    background-color: transparent;
+    border: 1px solid var(--greys-light-grey, #646D70);
+    color: #FFF;
+}
+
+.colomn {
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.menu-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding-top: 15px;
+        height: auto;
+    }
+
+    .menu-wrapper {
+        display: flex;
+        z-index: 5;
+    }
+    
+    br {
+        display: none;
+    }
+
+    .navigation-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+    }
+
+    .navigation { 
+        display: none;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #f46b45, #eea849);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height: 50px;
+        padding: 1em;
+    }
+      
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+      }
+      
+      .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #menu-toggle {
+        display: none;
+      }
+      
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
+      
+      .menu-button::before {
+        content: '';
+        margin-top: -8px;
+      }
+      
+      .menu-button::after {
+        content: '';
+        margin-top: 8px;
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+      }
+      
+      @media (max-width: 700px) {
+
+          /* Hamburger stuff */
+
+          .menu-button-container {
+          display: flex;
+        }
+        .menu {
+          position: absolute;
+          top: 0;
+          margin-top: 50px;
+          left: 0;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        #menu-toggle ~ .menu li {
+          height: 0;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        #menu-toggle:checked ~ .menu li {
+          border: 1px solid #333;
+          height: 2.5em;
+          padding: 0.5em;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .menu > li {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0.5em 0;
+          width: 100%;
+          color: white;
+          background-color: #222;
+        }
+        .menu > li:not(:last-child) {
+          border-bottom: 1px solid #444;
+        }
+
+          /* Animation #3 (Header fade-in animation) */
+          .header {
+              opacity: 0;
+              animation: fadeIn 1s ease-in-out forwards;
+          }
+
+          @keyframes fadeIn {
+              from {
+                  opacity: 0;
+              }
+              to {
+                  opacity: 1;
+              }
+          }
+
+          .menu-button-container {
+              transition: background-color 0.3s ease-in-out;
+          }
+
+          .play-btn img {
+              transition: transform 0.3s ease-in-out;
+          }
+
+          .read-more-button {
+              transition: color 0.3s ease-in-out;
+          }
+
+          .contact-button {
+              transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+          }
+
+          .label-medium:hover {
+              transition: color 0.3s ease-in-out;
+          }
+
+          body.scrolled .header {
+              background-color: #333;
+          }
+
+          .menu > li:hover {
+              background-color: #555;
+          }
+
+          .menu-button-container:hover {
+              background-color: #555;
+          }
+
+          .play-btn:hover img {
+              transform: scale(1.1);
+          }
+
+          .read-more-button:hover {
+              color: #00BAF0;
+          }
+
+          .contact-button:hover {
+              background-color: #00BAF0;
+              color: #FFF;
+          }
+
+          .label-medium:hover {
+              color: #00BAF0;
+          }
+
+          .menu a:hover {
+              color: #00BAF0;
+          }
+
+
+
+      }
+
+}

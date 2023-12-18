@@ -1,0 +1,124 @@
+    /* MAIN SECTIONS */
+
+    .first-section {
+        width: 100%;
+        height: auto;
+        background-color: #FFF;
+        margin-top: 720px;
+    }
+
+    .intro {
+        width: 400px;
+        height: 275px;
+        margin-top: 56px;
+        margin-bottom: 68px;
+    }
+
+    .read-more-button {
+        display: inline-block;
+        background: white;
+        color: #606B74;
+        border: none;
+        border-radius: 4px;
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        padding: 6px 12px;
+        border: 1px solid #606B74;
+
+    }
+
+    .read-more-button:hover {
+        background-color: #606B74;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    .second-section {
+        width: 100%;
+        padding-top: 66px;
+        padding-bottom: 78px;
+        height: auto;
+        background-color: #26353B;
+    }
+
+    .paragraph-large {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        /* Paragraph / Large */
+        font-family: Rubik;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+        opacity: 0.7;
+    }
+
+    .third-section {
+        width: 100%;
+        height: auto;
+        background-color: #FFF;
+        padding-top: 85px;
+    }
+    .paragraph-medium {
+        color: #646D70;
+        font-feature-settings: 'clig' off, 'liga' off;
+        /* Paragraph / Medium */
+        font-family: Rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+        opacity: 0.7;
+        margin-top: 0;
+    }
+
+    .col {
+        flex: 1;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 320px) {
+        .first-section {
+            margin-top: 30px;
+        }
+
+        .intro {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .read-more-button {
+            margin-top: 20px;
+        }
+
+        .second-section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .paragraph-large {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        .third-section {
+            padding-top: 60px;
+        }
+
+        .paragraph-medium {
+            font-size: 16px;
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        .col {
+            padding: 10px;
+        }
+
+
+    }

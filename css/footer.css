@@ -1,0 +1,79 @@
+footer {
+    background-color: #222F33;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.label-medium {
+    color: #FFF;
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Label / Medium */
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.label-medium:hover {
+    color: grey;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 320px) {
+
+    .label-medium {
+        text-align: center;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    /* Animation #1 (Footer is sliding up from below) */
+
+    .footer-container {
+        transform: translateY(100%);
+        animation: slideUp 1s ease-in-out forwards;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .email:hover {
+        color: #00BAF0;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .footer-container .logo img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navigation a:hover {
+        color: #00BAF0;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .navigation li:hover {
+        background-color: #555;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    
+
+}
